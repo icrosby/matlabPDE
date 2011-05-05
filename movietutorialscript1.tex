@@ -1,0 +1,47 @@
+\documentclass%[12pt] % uncomment the first % sign to enlarge the text for proofreading
+{amsart}
+\renewcommand{\baselinestretch}{1.5} % enable to get double spacing
+\usepackage{verbatim, graphicx}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\begin{document}
+
+\begin{LARGE}
+
+What is a PDE?
+
+To begin let's start with a definition of Ordinary Differential Equations.  In mathematics, an ordinary differential equation (or ODE) is a relation that contains functions of only one independent variable, and one or more of their derivatives with respect to that variable. A simple example of an ODE would be 
+
+\[
+f(x)''=-f(x)
+\]
+
+Where the solution to this would be 
+\[
+ f(x)=sin(x)+cos(x)
+\] 
+or any linear combination of $\sin(x)$ or $\cos(x)$
+
+Another example of this would be newton's second law
+\[
+F=ma
+\]
+since acceleration is the second derivitive of the position equation.
+
+Now on to PDE's.  A PDE is similar to an ODE except for PDE's deal with muti-variable function (ie $f(x,y)$
+
+An example of an PDE would be the wave equation which models the motion of waves, such as in a vibrating string.  The wave PDE is
+
+\[
+u(t,x)_{tt}=c^2u(t,x)_{xx}
+\]
+
+What this says is that u is a function of t and x, and that the second derivitave of u with respect to t is equal to a constant squared times the second deravitive of u with respect to x.  One method of solving the wave equation deals with a technique called seperation of varables, and the solution is highly dependent on the initail conditions as well as the boundary conditions placed on the function.  
+
+This eccentaily what a PDE is.  Now to Taha with examples of how we use PDE's.
+
+\end{LARGE}
+
+\end{document}
