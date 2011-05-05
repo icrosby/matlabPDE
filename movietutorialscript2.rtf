@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\author tahaalibak}
+{\*\company Grizli777}}\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural\pardirnatural
+
+\f0\b\fs24 \cf0 In what areas is the PDE tool applicable?\
+\pard\pardeftab720\ql\qnatural\pardirnatural
+
+\b0 \cf0 PDEs are used as mathematical models for a wide variety of problems and applications in engineering and the applied sciences.\
+\pard\pardeftab720\ql\qnatural\pardirnatural
+
+\b \cf0 Some of the problems that can be solved and modeled include:\
+\pard\pardeftab720\ql\qnatural\pardirnatural
+
+\b0 \cf0 \'95 Heat transfer in solids\
+\'95 Di
+\f1 \uc0\u64256 
+\f0 usion\
+\'95 Electrostatics of dielectric and conductive media\
+\'95 Wave propagation in sound and electro-magnetics\
+\'95 Transverse motion of membranes\
+\'95 Finding the natural modes of vibrations in membranes and structural mechanics problems\
+\pard\pardeftab720\ql\qnatural\pardirnatural
+
+\b \cf0 How do I use the PDE tool box to solve these problems?\
+\pard\pardeftab720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Using the PDE tool involves 3 main parts:\
+\'95 De\uc0\u64257 ning a PDE problem\
+To de\uc0\u64257 ne a problem we must know the general form of the PDE equation we use (parabolic, elliptic, hyperbolic, eigenvalue) and we must also know the geometry of the problem that needs to be solved. For simple geometries, the built in functions of the PDE GUI may su
+\f1 \uc0\u64259 
+\f0 ce. They can be drawn manually in the GUI and include intersections, unions, or di
+\f1 \uc0\u64256 
+\f0 erences of shapes that include squares, rectangles, ellipses, and irregularly shaped polygons. For more complex systems, an equation for the geometry of the shape can be entered through the command prompt. Next, boundary conditions need to be speci\uc0\u64257 ed for edges of the object and the edges of the sub-domains. These come in the form of Dirichlet and Neumann boundary conditions. Dirichlet boundary conditions specify the value the solution must take on the boundary of the domain. A Neumann boundary condition speci\u64257 es the value the derivative of a solution is to takeon the boundary of the domain.\
+\'95 Solving the PDE\
+The PDE tool box uses the Finite Element Method (FEM). The FEM involves creating a triangular mesh across the geometry of the object and solving at each of the vertices of the triangles. FEM is useful because often exact solutions are unattainable and estimations may su
+\f1 \uc0\u64259 
+\f0 ce. The triangular mesh must be initialized and re\uc0\u64257 ned carefully. If the mesh is initialized but not re\u64257 ned or improved, some areas of the geometry may have less accurate estimations of the solution than desired. If the mesh is made to be too \u64257 ne, MATLAB will spend too much time computing. Once the triangular mesh is in place, MATLAB will solve the PDE.\
+\
+\'95 Visualizing the results on a graph\
+The results of the PDE solution can be visualized in several ways. The default option is to see a color grid with a color bar axis. Other options include the use of contour lines, a 3D plot, and animation mode. Animation mode plots the solution to the equation as a function over several di
+\f1 \uc0\u64256 
+\f0 erent graphs  depending on what time steps were speci\uc0\u64257 ed in the GUI.\
+}
